@@ -52,6 +52,7 @@
     </header>
 
       <main class="main-inner">
+        <div class="hotels-filter">
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -73,22 +74,19 @@
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="checkbox" name="water" checked>
-                            
-                                    Бассейн
+                                      Бассейн
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="checkbox" name="parking" checked>
-                            
-                                    Парковка
+                                      Парковка
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="checkbox" name="wi-fi">
-                            
-                                    Wi-Fi
+                                       Wi-Fi
                                 </label>
                                 </li>
                         </ul>
@@ -100,53 +98,72 @@
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="radio" name="hotel" checked>
-                        
-                                Гостиница
+                                      Гостиница
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="radio" name="motel">
-                        
-                                Мотель
+                                      Мотель
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
                                 <label class="control">
                                     <input class="control-input" type="radio" name="apartments">
-                        
-                                Апартаменты
+                                       Апартаменты
                                 </label>
                             </li>
                         </ul>                      
                     </fieldset>
-                    <button class="button" type="submit">Показать</button>
-                </form>
 
-                    <select class="select-control" aria-label="Сортировка">
+                    <fieldset class="catalog-filter-group">
+                      <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                      <ul class="catalog-filter-list">
+                          <li class="catalog-filter-item">
+                              <input class="control-input" type="text" name="0">
+                              <input class="control-input" type="text" name="9000">
+                          </li>
+                            <li class="catalog-filter-item"></li>
+                              <input type="range" min="0" max="9000">
+                          </li>
+                      </ul>
+                  </fieldset>
+                <form>
+                    <button class="button" type="submit">Применить</button>
+                </form>
+                <form>
+                  <button class="button" type="submit">Сбросить</button>
+              </form>
+              </div>
+
+              <div class="hotel-display-list">
+              <select class="select-control" aria-label="Сортировка">
                         <option value="popular">Сначала популярное</option>
                         <option value="cheap">Сначала дешёвое</option>
                         <option value="expensive">Сначала дорогое</option>
-                    </select>
-                    <a class="button button-light" href="#" >
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
+              </select>
+                  <a class="button button-light" href="#" >
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                  <a class="button" href="#">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+              </div>
+
+              <section class="hotels-list">
                     <ul class="product-hotel">
-                        <li class="product-hotel">
-                            <a class="product-hotel-link" href="product.html">
-                                <img class="product-hotel-image" src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница Amara Resort & Spa">
-                                <h3 class="product-hotel-title">Amara Resort & Spa</h3>
-                            </a>
-                            <b class="product-hotel-price">От 4000 ₽</b>
-                            <a class="product-hotel-button button1" href="#">Подробнее</a>
-                            <a class="product-hotel-button button2" href="#">Избранное</a>
-                        </li>
-                        <li class="product-hotel">
-                            <a class="product-hotel-link" href="product.html">
-                                <img class="product-hotel-image" src="images/hotel-desert.jpg" width="299" height="206" alt="Гостиница Desert Quail Inn">
+                      <li class="product-hotel">
+                        <a class="product-hotel-link" href="product.html">
+                          <img class="product-hotel-image" src="images/hotel-amara.jpg" width="299" height="206" alt="Гостиница Amara Resort & Spa">
+                            <h3 class="product-hotel-title">Amara Resort & Spa</h3>
+                      </a>
+                        <b class="product-hotel-price">От 4000 ₽</b>
+                          <a class="product-hotel-button button1" href="#">Подробнее</a>
+                          <a class="product-hotel-button button2" href="#">Избранное</a>
+                    </li>
+                    <li class="product-hotel">
+                      <a class="product-hotel-link" href="product.html">
+                        <img class="product-hotel-image" src="images/hotel-desert.jpg" width="299" height="206" alt="Гостиница Desert Quail Inn">
                                 <h3 class="product-hotel-title">Desert Quail Inn</h3>
                             </a>
                             <b class="product-hotel-price">От 3000 ₽</b>
@@ -200,8 +217,9 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="button pagination-show-more" type="button">Показать ещё</button>
+                    <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         </section>
+
         <section class="mailings">
             <h2 class="mailings-title">Подпишитесь на рассылку</h2>
               <p class="mailings-description">Только полезная информация и никакого спама, честное бойскаутское!></p>
