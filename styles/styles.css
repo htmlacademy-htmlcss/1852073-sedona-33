@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #242424;
+    background-color: #fbf7f4;
+  }
+
+  .button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+/* Pages */
+
+.page-header {
+    color: #000000;
+    background: #ffffff;
+  }
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .main-index {
+    color: #000000;
+    background: #ffffff;
+    background-image: url("images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+/* List */
+.advantages-list {
+  text-align: center;
+}
+
+/* Item */
+.advantages-item1 .advantages-item1-1 .advantages-item1-3 .advantages-item2 .advantages-item3 .advantages-item4 .advantages-item5 {
+  background-color: 83B3D3;
+}
+
+/* Title */
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.search-title .mailings-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+/* Description */
+.advantage-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-description .mailings-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Footer */
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+}
