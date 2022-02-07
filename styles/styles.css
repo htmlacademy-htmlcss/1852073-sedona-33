@@ -14,7 +14,15 @@
     font-display: swap;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -51,6 +59,23 @@
     background: #ffffff;
   }
 
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 345px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .navigation-link {
     font-size: 20px;
     line-height: 26px;
@@ -59,33 +84,60 @@
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
-  }
+}
 
-  .main-index {
+.main-container {
+    flex-grow: 1;
+} 
+
+.main-index {
     color: #000000;
     background: #ffffff;
     background-image: url("images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-  }
+}
 
-  .inner-header-title {
+.inner-header-title {
     color: #000000;
     text-decoration: none;
-  }
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
 
 /* List */
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .hotels-list {
+  display: flex;
+  width: 1058px;
   color: #000000;
   text-decoration: none;
 }
 
+.product-hotel {
+  display: flex;
+  width: 339px;
+  margin-right: 10px;
+}
+
 /* Item */
 .advantages-item1, .advantages-item1-1, .advantages-item1-3, .advantages-item2, .advantages-item3, .advantages-item4, .advantages-item5 {
+  width: 400px;
   background-color: 83B3D3;
 }
 
@@ -102,10 +154,19 @@
   text-transform: uppercase;
 }
 
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Description */
 .advantage-description {
   font-size: 18px;
   line-height: 21px;
+}
+
+.search, .mailings {
+  width: 1200px;
 }
 
 .search-description, .mailings-description {
@@ -114,7 +175,14 @@
 }
 
 /* Footer */
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .telephone {
+  color: #242424;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -122,4 +190,11 @@
 
 .footer-contacts {
   text-decoration: none;
+  width: 107px;
+  margin-right: 61px;
+}
+
+.site {
+  margin-left: auto;
+  max-width: 115px;
 }
