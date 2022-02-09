@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-<!-- Сетка страниц и крупных блоков. Временная запись -->
+
   <body>
     <header class="page-header">
       <nav class="navigation">
@@ -51,8 +51,8 @@
       </nav>      
     </header>
 
-      <main class="main-inner">
-        <div class="hotels-filter">
+      <main class="main-inner main-container">
+        <div class="page-container">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -66,7 +66,7 @@
           </header>
 
         <section class="filters">
-            <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+            <h2 class="visually-hidden hidden">Фильтры поиска гостиницы</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -231,7 +231,8 @@
                 <input type="text" name="appointment-mail">
                 <button class="button" type="submit">Подписаться</button>
         </section>
-      </main>
+      </div>
+    </main>
   
       <footer class="page-footer">
         <section class="footer-contacts">
