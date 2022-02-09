@@ -34,6 +34,16 @@
     text-transform: uppercase;
   }
   
+/* header */
+
+.hotels-choice {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Pages */
 
 .page-header {
@@ -59,13 +69,23 @@
     background-repeat: no-repeat;
   }
 
+  .inner-header-title {
+    color: #000000;
+    text-decoration: none;
+  }
+
 /* List */
 .advantages-list {
   text-align: center;
 }
 
+.hotels-list {
+  color: #000000;
+  text-decoration: none;
+}
+
 /* Item */
-.advantages-item1 .advantages-item1-1 .advantages-item1-3 .advantages-item2 .advantages-item3 .advantages-item4 .advantages-item5 {
+.advantages-item1, .advantages-item1-1, .advantages-item1-3, .advantages-item2, .advantages-item3, .advantages-item4, .advantages-item5 {
   background-color: 83B3D3;
 }
 
@@ -76,7 +96,7 @@
   text-transform: uppercase;
 }
 
-.search-title .mailings-title {
+.search-title, .mailings-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -88,7 +108,7 @@
   line-height: 21px;
 }
 
-.search-description .mailings-description {
+.search-description, .mailings-description {
   font-size: 22px;
   line-height: 26px;
 }
@@ -97,4 +117,10 @@
 .telephone {
   font-size: 40px;
   line-height: 40px;
+  text-decoration: none;
 }
+
+.footer-contacts {
+  text-decoration: none;
+}
+/*<!-- Сетка страниц и крупных блоков. Временная запись --> */
