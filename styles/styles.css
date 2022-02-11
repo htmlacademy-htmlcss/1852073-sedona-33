@@ -112,7 +112,7 @@ body {
 }
 
 .advantages {
-  max-width: 1200;
+  max-width: 1056;
 
 }
 
@@ -121,7 +121,7 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 400px;
+  width: 1056px;
   margin: 0;
   padding: 0;
 }
@@ -129,15 +129,15 @@ body {
 .hotels-list {
   color: #000000;
   text-decoration: none;
+  width: 1056px;
+  margin: auto;
 }
 
 .hotel-display-list {
   display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 400px;
-  margin: 0;
-  padding: 0;
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;  
 }
 
 /* Item */
@@ -183,7 +183,16 @@ body {
   line-height: 26px;
 }
 
+.mailings  {
+  width: 800px;
+  margin: auto;
+}
+
 /* Footer */
+
+.page-footer {
+  text-decoration: none;
+}
 
 .page-footer-container {
   display: flex;
@@ -194,9 +203,4 @@ body {
 .telephone {
   font-size: 40px;
   line-height: 40px;
-  text-decoration: none;
-}
-
-.footer-contacts {
-  text-decoration: none;
 }
