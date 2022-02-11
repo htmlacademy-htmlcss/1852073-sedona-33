@@ -14,15 +14,23 @@
     font-display: swap;
   }
 
-  body {
+html {
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #242424;
     background-color: #fbf7f4;
-  }
+}
 
-  .button {
+.button {
     font-family: inherit;
     font-size: 16px;
     line-height: 16px;
@@ -32,7 +40,7 @@
     background-color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-  }
+}
   
 /* header */
 
@@ -51,6 +59,26 @@
     background: #ffffff;
   }
 
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  width: 345px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  margin-left: auto;
+}
+
 .navigation-link {
     font-size: 20px;
     line-height: 26px;
@@ -61,32 +89,75 @@
     text-transform: capitalize;
   }
 
-  .main-index {
+.page-container, .page-footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.main-index {
     color: #000000;
     background: #ffffff;
     background-image: url("images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-  }
+}
 
-  .inner-header-title {
+.inner-header-title {
     color: #000000;
     text-decoration: none;
-  }
+}
+
+.advantages {
+  max-width: 1056;
+
+}
 
 /* List */
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: center;
+  width: 1056px;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-list {
   color: #000000;
   text-decoration: none;
+  width: 1056px;
+  margin: auto;
+}
+
+.hotel-display-list {
+  display: flex;
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0;  
 }
 
 /* Item */
+
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item1, .advantages-item1-1, .advantages-item1-3, .advantages-item2, .advantages-item3, .advantages-item4, .advantages-item5 {
   background-color: 83B3D3;
+}
+
+.catalog-filter-group {
+  display: flex;
+}
+
+.catalog-filter-title {
+  width: 300px;
+
 }
 
 /* Title */
@@ -113,14 +184,24 @@
   line-height: 26px;
 }
 
+.mailings  {
+  width: 800px;
+  margin: auto;
+}
+
 /* Footer */
-.telephone {
-  font-size: 40px;
-  line-height: 40px;
+
+.page-footer {
   text-decoration: none;
 }
 
-.footer-contacts {
-  text-decoration: none;
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
-/*<!-- Сетка страниц и крупных блоков. Временная запись --> */
+
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+}

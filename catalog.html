@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-<!-- Сетка страниц и крупных блоков. Временная запись -->
+
   <body>
     <header class="page-header">
       <nav class="navigation">
@@ -51,8 +51,8 @@
       </nav>      
     </header>
 
-      <main class="main-inner">
-        <div class="hotels-filter">
+      <main class="main-inner main-container">
+        <div class="page-container">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -66,7 +66,7 @@
           </header>
 
         <section class="filters">
-            <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+            <h2 class="visually-hidden hidden">Фильтры поиска гостиницы</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -226,14 +226,16 @@
 
         <section class="mailings">
             <h2 class="mailings-title">Подпишитесь на рассылку</h2>
-              <p class="mailings-description">Только полезная информация и никакого спама, честное бойскаутское!></p>
+              <p class="mailings-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
                 <input type="text" name="appointment-mail">
                 <button class="button" type="submit">Подписаться</button>
         </section>
-      </main>
+      </div>
+    </main>
   
-      <footer class="page-footer">
+    <footer class="page-footer">
+        <div class="page-footer-container">
         <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
             <ul class="navigation-contacts">
@@ -268,6 +270,7 @@
           <h2 class="visually-hidden">Сайт обучения разработке</h2>
             <img class="logo" src="images/logo_htmlacademy.png" alt="Логотип htmlacademy">
         </section>
+      </div>
     </footer>
 
   </body>
